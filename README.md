@@ -1,6 +1,8 @@
-# ProjectManager
+# Project Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
+This project is part of a tutorial series on using Angular with Firebase.
+
+For more information, see Part 1 of the series on [Experis Spark](http://experisspark.com/2017/10/06/building-web-app-angular-4-firebase/).
 
 ## Development server
 
