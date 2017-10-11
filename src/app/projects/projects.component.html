@@ -5,3 +5,28 @@
     {{project.title}}
   </li>
 </ul>
+
+<div>
+  <h3>Add a New Project</h3>
+
+  <input type="text" placeholder="Project title"
+    [(ngModel)]="newProjectTitle"
+    (keyup.enter)="addProject()">
+
+  <button (click)="addProject()">Add Project</button>
+</div>
+
+<div>
+  <h3>Add a New Task</h3>
+
+  <select [(ngModel)]="newProjectKey">
+    <option *ngFor="let project of projects"
+      [ngValue]="project.key">{{project.title}}</option>
+  </select>
+
+  <input type="text" placeholder="Task title"
+    [(ngModel)]="newTaskTitle"
+    (keyup.enter)="addTask()">
+
+  <button (click)="addTask()">Add Task</button>
+</div>
