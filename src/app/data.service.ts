@@ -9,6 +9,15 @@ export class DataService {
   ) { }
 
   /**
+   * Returns an observable of a database object.
+   * @param key The database object's key.
+   * @param path The path to the database object's parent.
+   */
+  getObject<T>(key: string, path: string): Observable<T> {
+    return this._db.object(`${path}/${key}`).valueChanges();
+  }
+
+  /**
    * Returns an observable of database objects below a given path.
    * @param path The path to the database object.
    */
